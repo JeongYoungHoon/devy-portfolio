@@ -21,12 +21,10 @@ export default function HeroSection() {
           프로젝트 보기
         </a>
         <a
-          href="https://github.com/devycho"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#contact"
           className="rounded-full border border-zinc-300 px-6 py-2.5 text-sm font-medium text-zinc-700 transition-colors hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-600 dark:hover:bg-zinc-900"
         >
-          GitHub
+          연락하기
         </a>
       </div>
     </section>
