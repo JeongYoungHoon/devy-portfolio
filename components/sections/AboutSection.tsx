@@ -11,6 +11,10 @@ const PHILOSOPHIES = [
     title: "빠른 적용",
     body: "새로운 기술을 빠르게 흡수하고 실제 프로젝트에 바로 녹여내는 것을 즐깁니다.",
   },
+  {
+    title: "AI 도구 활용",
+    body: "Gemini CLI와 Claude Code를 개발 워크플로우에 통합해 코드 리뷰, 리팩토링, 아이디어 검증을 빠르게 처리합니다.",
+  },
 ];
 
 export default function AboutSection() {

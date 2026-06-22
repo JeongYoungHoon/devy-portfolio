@@ -10,11 +10,15 @@ export const STACK: StackGroup[] = [
   },
   {
     category: "AI / API",
-    items: ["Gemini API", "OpenAI API", "Notion API"],
+    items: ["Gemini API", "OpenAI API", "OpenRouter", "Notion API", "GitHub API"],
+  },
+  {
+    category: "Cloud / Infra",
+    items: ["AWS Lambda", "DynamoDB", "Streamlit"],
   },
   {
     category: "Tools",
-    items: ["Gradle", "Git", "GitHub Actions", "Figma"],
+    items: ["Gradle", "Git", "GitHub Actions", "Gemini CLI", "Claude Code", "Figma"],
   },
   {
     category: "Web",

@@ -13,27 +13,27 @@ export const PROJECTS: Project[] = [
     version: "v4.12.0",
     type: "Android App",
     description:
-      "Gemini API 기반 AI 상황극 앱. 캐릭터를 직접 생성(실제 인물 기반 가능)하고 1:1 또는 다수 캐릭터와 롤플레이. 캐릭터 생성 자체도 LLM으로 보조.",
+      "Gemini / OpenRouter API 기반 AI 상황극 앱. 캐릭터를 직접 생성하고 1:1 또는 다수 캐릭터와 롤플레이. AWS Lambda 프록시로 API 키 보호 + DynamoDB 사용량 모니터링.",
     accent: "#5D18D7",
-    tags: ["Kotlin", "Gemini API", "Jetpack Compose"],
+    tags: ["Kotlin", "Gemini API", "OpenRouter", "AWS Lambda", "Jetpack Compose"],
   },
   {
     name: "Pixaloom",
     version: "v2.5.0",
     type: "Android App",
     description:
-      "Gemini & OpenAI API를 활용한 이미지 생성/수정 앱. SafeGuard 최적화 적용.",
+      "Gemini & OpenAI API를 활용한 이미지 생성 앱. AWS Lambda 프록시로 API 키 보호 + DynamoDB 사용량 모니터링. WorkManager 백그라운드 처리.",
     accent: "#FF6B35",
-    tags: ["Kotlin", "Gemini API", "OpenAI API"],
+    tags: ["Kotlin", "Gemini API", "OpenAI API", "AWS Lambda"],
   },
   {
     name: "Devy Workspace",
     version: "v3.6.0",
     type: "Android App",
     description:
-      "프로젝트들의 Notion Task / Issue Dashboard 앱. Notion API 연동.",
+      "개인 개발자용 통합 대시보드 앱. GitHub PR / Branch / Workflow / Release 모니터링 + Notion Task·Issue 관리. Firebase FCM 실시간 알림.",
     accent: "#007AFF",
-    tags: ["Kotlin", "Notion API", "Jetpack Compose"],
+    tags: ["Kotlin", "GitHub API", "Notion API", "Firebase FCM", "Jetpack Compose"],
   },
   {
     name: "Appler",
@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
     version: null,
     type: "Android Library",
     description:
-      "Appler 등에서 사용하는 공용 UI/기능 모듈. Gradle Composite Build 기반.",
+      "AlterAI · Pixaloom · Devy Workspace · Appler가 공유하는 핵심 Android 라이브러리. Gradle Composite Build 기반.",
     accent: "#8E8E93",
     tags: ["Kotlin", "Gradle", "Jetpack Compose"],
   },
