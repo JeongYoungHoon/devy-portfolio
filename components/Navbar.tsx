@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/80">
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
         <a href="#" className="font-mono text-sm font-semibold tracking-tight">
-          Devy
+          Devy Portfolio
         </a>
         <div className="flex items-center gap-1">
           <ul className="hidden items-center gap-1 sm:flex">
