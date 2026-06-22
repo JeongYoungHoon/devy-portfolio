@@ -25,16 +25,18 @@ export default function AboutSection() {
       <div className="grid gap-12 md:grid-cols-2">
         <div className="space-y-4 text-zinc-600 dark:text-zinc-400">
           <p className="text-base leading-relaxed">
-            Android 생태계를 중심으로 활동하는 개발자 <strong className="text-zinc-900 dark:text-zinc-100">Devy</strong>입니다.
+            <strong className="text-zinc-900 dark:text-zinc-100">12년차 Android 개발자</strong> Devy입니다.
+            기획부터 배포, 운영까지 서비스 전 과정을 책임지는 Full-cycle 역량을 갖추고 있습니다.
           </p>
           <p className="text-base leading-relaxed">
             <strong className="text-zinc-900 dark:text-zinc-100">Kotlin</strong>과{" "}
             <strong className="text-zinc-900 dark:text-zinc-100">Jetpack Compose</strong>를 주로 사용하며,
             Gemini / OpenAI 같은 AI API를 앱에 녹여내는 것을 즐깁니다.
+            iOS(Swift)도 3년 이상 경험했습니다.
           </p>
           <p className="text-base leading-relaxed">
-            직접 기획하고 개발한 앱들을 꾸준히 유지보수하며
-            실 사용자 피드백을 코드로 반영하는 사이클을 즐깁니다.
+            오해 없는 커뮤니케이션을 중시하며, 팀의 기술 히스토리를 정리하고
+            공유하는 구심점 역할을 즐깁니다.
           </p>
         </div>
 
