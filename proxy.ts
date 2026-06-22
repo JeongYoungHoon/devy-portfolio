@@ -4,6 +4,11 @@ export function proxy(request: NextRequest) {
   const hostname = request.headers.get("host") ?? "";
   const url = request.nextUrl.clone();
 
+  // 정적 파일은 rewrite 하지 않음
+  if (/\.\w+$/.test(url.pathname)) {
+    return NextResponse.next();
+  }
+
   // portfolio.jdevy.com → /portfolio
   if (hostname.startsWith("portfolio.")) {
     url.pathname = `/portfolio${url.pathname === "/" ? "" : url.pathname}`;
