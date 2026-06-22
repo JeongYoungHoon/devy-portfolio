@@ -6,7 +6,7 @@ export type StackGroup = {
 export const STACK: StackGroup[] = [
   {
     category: "Mobile",
-    items: ["Kotlin", "Android", "Jetpack Compose", "Room", "Retrofit", "WorkManager"],
+    items: ["Kotlin", "Java", "Android", "Jetpack Compose", "MVI", "MVVM", "Room", "DataStore", "Retrofit", "WorkManager"],
   },
   {
     category: "AI / API",
@@ -14,7 +14,7 @@ export const STACK: StackGroup[] = [
   },
   {
     category: "Cloud / Infra",
-    items: ["AWS Lambda", "DynamoDB", "Streamlit"],
+    items: ["AWS Lambda", "DynamoDB", "MySQL", "Firebase", "Streamlit"],
   },
   {
     category: "Tools",
