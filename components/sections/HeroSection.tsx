@@ -1,3 +1,5 @@
+import TypewriterText from "@/components/TypewriterText";
+
 export default function HeroSection() {
   return (
     <section
@@ -7,11 +9,9 @@ export default function HeroSection() {
       <p className="mb-3 font-mono text-sm text-zinc-500 dark:text-zinc-400">
         안녕하세요, 저는
       </p>
-      <h1 className="text-5xl font-bold tracking-tight sm:text-7xl">
-        Devy
-      </h1>
-      <p className="mt-4 max-w-md text-lg text-zinc-600 dark:text-zinc-400">
-        Android 앱을 만드는 개발자입니다.
+      <h1 className="text-5xl font-bold tracking-tight sm:text-7xl">Devy</h1>
+      <p className="mt-4 h-7 max-w-md text-lg text-zinc-600 dark:text-zinc-400">
+        <TypewriterText />
       </p>
       <div className="mt-8 flex items-center gap-3">
         <a
