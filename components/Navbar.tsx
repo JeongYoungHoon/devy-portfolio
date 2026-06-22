@@ -28,6 +28,12 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+          <a
+            href={process.env.NEXT_PUBLIC_HOME_URL || "/"}
+            className="ml-1 rounded-md px-3 py-1.5 text-sm text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+          >
+            ← 홈
+          </a>
           <div className="ml-2">
             <DarkModeToggle />
           </div>
