@@ -7,6 +7,7 @@ export type Project = {
   tags: string[];
   group: "recent" | "past";
   period?: string;
+  highlights?: string[];
 };
 
 export const PROJECTS: Project[] = [
@@ -20,6 +21,11 @@ export const PROJECTS: Project[] = [
     accent: "#5D18D7",
     tags: ["Kotlin", "Gemini API", "OpenRouter", "AWS Lambda", "Jetpack Compose"],
     group: "recent",
+    highlights: [
+      "채팅 목록·설정, 등장인물(Character) 설정 및 사진요청 기능 구현",
+      "히스토리 요약 및 설정/상황 프롬프트 저장 기능 구현",
+      "기본 프롬프트 설정, 채팅 상세 설정, 메시지 재전송 기능 추가",
+    ],
   },
   {
     name: "Pixaloom",
@@ -30,6 +36,11 @@ export const PROJECTS: Project[] = [
     accent: "#FF6B35",
     tags: ["Kotlin", "Gemini API", "GPT Image API", "AWS Lambda"],
     group: "recent",
+    highlights: [
+      "프로젝트 목록·설정, 이미지 생성 및 커스텀 옵션, 프롬프트 저장 구현",
+      "Nano Banana ↔ GPT Image 전환 시 이미지 비율 유지 로직 구현",
+      "히스토리 완료 항목 상단 고정 및 미확인 항목 레드닷 표시",
+    ],
   },
   {
     name: "Devy Workspace",
@@ -40,6 +51,11 @@ export const PROJECTS: Project[] = [
     accent: "#007AFF",
     tags: ["Kotlin", "GitHub API", "Notion API", "Firebase FCM", "Jetpack Compose"],
     group: "recent",
+    highlights: [
+      "프로젝트 대시보드, 작업/이슈 카드 목록·상세 화면 구현",
+      "Notion API 기반 카드 상태 변경 및 프로젝트별 커스텀 스킴 설정",
+      "GitHub Action 실행·상태 확인, PR 목록/병합, Branch/Release 조회",
+    ],
   },
   {
     name: "Appler",
@@ -50,6 +66,11 @@ export const PROJECTS: Project[] = [
     accent: "#34C759",
     tags: ["Kotlin", "Compose", "Room", "DataStore", "Multi-module"],
     group: "recent",
+    highlights: [
+      "설치된 앱 기준 할 일 생성, 앱 바로가기, 홈 화면 즉시 편집 기능",
+      "할 일별 푸시 알림 시간 지정 기능 구현",
+      "리포트 탭 — 월간 완료 수, streak, 요일별 완수율 차트, 주간 스탬프 대시보드",
+    ],
   },
   {
     name: "DevyCore",
@@ -60,6 +81,11 @@ export const PROJECTS: Project[] = [
     accent: "#8E8E93",
     tags: ["Kotlin", "Gradle", "Jetpack Compose"],
     group: "recent",
+    highlights: [
+      ":global — 공통 로그(DLog), 앱 버전 관리(AppVersionManager)",
+      ":core:core-ui — 공통 Compose Component",
+      ":foundation:datastore — DataStore 래퍼·DynamoDB 모듈, Retrofit2 + Moshi 네트워크 모듈",
+    ],
   },
 
   // ── Past Projects ──
