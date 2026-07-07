@@ -7,6 +7,7 @@ export type Project = {
   tags: string[];
   group: "recent" | "past";
   period?: string;
+  highlights?: string[];
 };
 
 export const PROJECTS: Project[] = [
@@ -20,36 +21,56 @@ export const PROJECTS: Project[] = [
     accent: "#5D18D7",
     tags: ["Kotlin", "Gemini API", "OpenRouter", "AWS Lambda", "Jetpack Compose"],
     group: "recent",
+    highlights: [
+      "채팅 목록·설정, 등장인물(Character) 설정 및 사진요청 기능 구현",
+      "히스토리 요약 및 설정/상황 프롬프트 저장 기능 구현",
+      "기본 프롬프트 설정, 채팅 상세 설정, 메시지 재전송 기능 추가",
+    ],
   },
   {
     name: "Pixaloom",
-    version: "v2.5.0",
+    version: "v2.8.0",
     type: "Android App",
     description:
-      "Gemini & OpenAI API를 활용한 이미지 생성 앱. AWS Lambda 프록시로 API 키 보호 + DynamoDB 사용량 모니터링. WorkManager 백그라운드 처리.",
+      "Gemini(Nano Banana) · GPT Image API를 활용한 이미지 생성 앱. 모델 전환 시 이미지 비율 유지 로직 및 SafeGuard 최소화로 응답성 개선. AWS Lambda 프록시로 API 키 보호.",
     accent: "#FF6B35",
-    tags: ["Kotlin", "Gemini API", "OpenAI API", "AWS Lambda"],
+    tags: ["Kotlin", "Gemini API", "GPT Image API", "AWS Lambda"],
     group: "recent",
+    highlights: [
+      "프로젝트 목록·설정, 이미지 생성 및 커스텀 옵션, 프롬프트 저장 구현",
+      "Nano Banana ↔ GPT Image 전환 시 이미지 비율 유지 로직 구현",
+      "히스토리 완료 항목 상단 고정 및 미확인 항목 레드닷 표시",
+    ],
   },
   {
     name: "Devy Workspace",
-    version: "v3.6.0",
+    version: "v3.7.0",
     type: "Android App",
     description:
       "개인 개발자용 통합 대시보드 앱. GitHub PR / Branch / Workflow / Release 모니터링 + Notion Task·Issue 관리. Firebase FCM 실시간 알림.",
     accent: "#007AFF",
     tags: ["Kotlin", "GitHub API", "Notion API", "Firebase FCM", "Jetpack Compose"],
     group: "recent",
+    highlights: [
+      "프로젝트 대시보드, 작업/이슈 카드 목록·상세 화면 구현",
+      "Notion API 기반 카드 상태 변경 및 프로젝트별 커스텀 스킴 설정",
+      "GitHub Action 실행·상태 확인, PR 목록/병합, Branch/Release 조회",
+    ],
   },
   {
     name: "Appler",
-    version: null,
+    version: "v0.6.0",
     type: "Android App",
     description:
-      "일과 알림 앱. 앱별 일정 등록 + 완료 토글 + 주간/월간 리포트.",
+      "설치된 앱의 출석체크·혜택 등 할 일을 관리하는 앱. 앱별 할 일 생성·알림·편집 + 리포트 탭(월간 완료 수, streak, 요일별 완수율 차트, 주간 스탬프) + 로컬 백업·복구.",
     accent: "#34C759",
-    tags: ["Kotlin", "Room", "WorkManager"],
+    tags: ["Kotlin", "Compose", "Room", "DataStore", "Multi-module"],
     group: "recent",
+    highlights: [
+      "설치된 앱 기준 할 일 생성, 앱 바로가기, 홈 화면 즉시 편집 기능",
+      "할 일별 푸시 알림 시간 지정 기능 구현",
+      "리포트 탭 — 월간 완료 수, streak, 요일별 완수율 차트, 주간 스탬프 대시보드",
+    ],
   },
   {
     name: "DevyCore",
@@ -60,6 +81,11 @@ export const PROJECTS: Project[] = [
     accent: "#8E8E93",
     tags: ["Kotlin", "Gradle", "Jetpack Compose"],
     group: "recent",
+    highlights: [
+      ":global — 공통 로그(DLog), 앱 버전 관리(AppVersionManager)",
+      ":core:core-ui — 공통 Compose Component",
+      ":foundation:datastore — DataStore 래퍼·DynamoDB 모듈, Retrofit2 + Moshi 네트워크 모듈",
+    ],
   },
 
   // ── Past Projects ──
