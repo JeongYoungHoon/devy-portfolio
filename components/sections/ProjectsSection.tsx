@@ -27,9 +27,19 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           </div>
         </div>
-        <p className="mb-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+        <p className="mb-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
           {project.description}
         </p>
+        {project.highlights && (
+          <ul className="mb-4 space-y-1">
+            {project.highlights.map((item) => (
+              <li key={item} className="flex items-start gap-1.5 text-xs text-zinc-500 dark:text-zinc-400">
+                <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
         <div className="flex flex-wrap gap-1.5">
           {project.tags.map((tag) => (
             <span
