@@ -23,17 +23,17 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Pixaloom",
-    version: "v2.5.0",
+    version: "v2.8.0",
     type: "Android App",
     description:
-      "Gemini & OpenAI API를 활용한 이미지 생성 앱. AWS Lambda 프록시로 API 키 보호 + DynamoDB 사용량 모니터링. WorkManager 백그라운드 처리.",
+      "Gemini(Nano Banana) · GPT Image API를 활용한 이미지 생성 앱. 모델 전환 시 이미지 비율 유지 로직 및 SafeGuard 최소화로 응답성 개선. AWS Lambda 프록시로 API 키 보호.",
     accent: "#FF6B35",
-    tags: ["Kotlin", "Gemini API", "OpenAI API", "AWS Lambda"],
+    tags: ["Kotlin", "Gemini API", "GPT Image API", "AWS Lambda"],
     group: "recent",
   },
   {
     name: "Devy Workspace",
-    version: "v3.6.0",
+    version: "v3.7.0",
     type: "Android App",
     description:
       "개인 개발자용 통합 대시보드 앱. GitHub PR / Branch / Workflow / Release 모니터링 + Notion Task·Issue 관리. Firebase FCM 실시간 알림.",
@@ -43,12 +43,12 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Appler",
-    version: null,
+    version: "v0.6.0",
     type: "Android App",
     description:
-      "일과 알림 앱. 앱별 일정 등록 + 완료 토글 + 주간/월간 리포트.",
+      "설치된 앱의 출석체크·혜택 등 할 일을 관리하는 앱. 앱별 할 일 생성·알림·편집 + 리포트 탭(월간 완료 수, streak, 요일별 완수율 차트, 주간 스탬프) + 로컬 백업·복구.",
     accent: "#34C759",
-    tags: ["Kotlin", "Room", "WorkManager"],
+    tags: ["Kotlin", "Compose", "Room", "DataStore", "Multi-module"],
     group: "recent",
   },
   {
