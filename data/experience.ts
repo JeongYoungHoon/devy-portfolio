@@ -13,7 +13,7 @@ export const EXPERIENCES: Experience[] = [
     company: "카카오헬스케어",
     project: "파스타 (PASTA)",
     role: "Android",
-    period: "2024.09 ~ 현재",
+    period: "2024.09 ~ 2026.08",
     description: "혈당 / 체중 관리 건강관리 앱",
     stack: ["Kotlin", "Compose", "MVVM", "Retrofit2", "Room", "DataStore"],
     highlights: [

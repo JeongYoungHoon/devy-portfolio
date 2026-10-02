@@ -69,12 +69,12 @@ export type Career = {
 export const RESUME_CAREERS: Career[] = [
   {
     company: "주식회사 카카오헬스케어",
-    period: "2023.11 ~ 재직중",
+    period: "2023.11 ~ 2026.08",
     type: "정규직",
     items: [
       {
         title: "파스타(PASTA) 안드로이드 개발",
-        period: "2024.09 ~ 현재",
+        period: "2024.09 ~ 2026.08",
         role: "안드로이드 앱 주요 기능 개발 및 유지보수",
         tasks: [
           "Compose / MVVM 기반 아키텍처 내 신규 피처 개발",
