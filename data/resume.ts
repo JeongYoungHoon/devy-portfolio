@@ -74,8 +74,8 @@ export const RESUME_SKILLS: SkillGroup[] = [
     items: ["Slack", "Jira", "Figma", "Zeplin", "Notion"],
   },
   {
-    category: "DataBase Tools",
-    items: ["Firebase Realtime DataBase", "AWS DynamoDB", "MySQL", "SQLite"],
+    category: "Database Tools",
+    items: ["Firebase Realtime Database", "AWS DynamoDB", "MySQL", "SQLite"],
   },
   {
     category: "DevOps & Back-End",

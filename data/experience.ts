@@ -29,7 +29,7 @@ export const COMPANIES: Company[] = [
             title: "고객 상담 진입을 카카오톡 채널 1:1 채팅으로 전환",
             bullets: [
               "외부 상담 솔루션 종료에 대비해 Android·iOS 앱의 상담 진입을 카카오톡 채널 1:1 채팅으로 전환 (단독 담당)",
-              "피쳐플래그로 운영 중 되돌릴 수 있게 구성",
+              "피처 플래그로 운영 중 되돌릴 수 있게 구성",
             ],
           },
           {
@@ -120,7 +120,7 @@ export const COMPANIES: Company[] = [
           {
             title: "푸드샷 다중 이미지 프로세싱 속도 개선",
             bullets: [
-              "푸드샷 다중 이미지 선택 시 이미지 프로세싱 (캐싱 처리 등)을 병렬 로직으로 변경해 속도를 최대 3배 개선",
+              "푸드샷 다중 이미지 선택 시 이미지 프로세싱(캐싱 처리 등)을 병렬 로직으로 변경해 속도를 최대 3배 개선",
               "이미지 프로세싱 병렬 로직 변경으로 인한 OOM 방지를 위한 병렬 최대 개수 제한 로직",
             ],
           },
@@ -164,7 +164,7 @@ export const COMPANIES: Company[] = [
           },
           {
             title: "돈버는 알람 기능 개발",
-            bullets: ["안쓰는 시간, 미사용 시간을 활용해 캐시를 지급하는 알람 기능 구현"],
+            bullets: ["안 쓰는 시간, 미사용 시간을 활용해 캐시를 지급하는 알람 기능 구현"],
           },
           {
             title: "잠금화면 서비스 로직 유지보수",
@@ -267,8 +267,8 @@ export const COMPANIES: Company[] = [
           },
           {
             section: "Mobile · Kotlin, Swift, Firebase · 2018.11~2020.01",
-            title: "프로필 사진 심사앱 제작",
-            bullets: ["프로필 사진 심사를 위한 심사앱(Android, iOS) 제작"],
+            title: "프로필 사진 심사 앱 제작",
+            bullets: ["프로필 사진 심사를 위한 심사 앱(Android, iOS) 제작"],
           },
           {
             section: "Frontend & Backend · PHP · 2019.03~2019.12",
