@@ -6,6 +6,7 @@ export type Project = {
   period: string;
   description: string;
   note?: string;
+  link?: string;
   stack: string;
   accent: string;
   group: "recent" | "past";
@@ -118,6 +119,7 @@ export const PROJECTS: Project[] = [
     version: null,
     period: "2025.09 ~ 현재",
     description: "개인 프로젝트 전반에서 사용하는 공통 라이브러리 (Gradle Composite Build로 각 프로젝트에 연동)",
+    link: "https://github.com/DevyMobile/devy-core-android",
     stack: "Kotlin, Compose, Retrofit2, Multi-module / Figma",
     accent: "#8E8E93",
     group: "recent",
