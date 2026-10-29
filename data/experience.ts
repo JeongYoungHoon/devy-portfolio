@@ -163,7 +163,7 @@ export const COMPANIES: Company[] = [
             bullets: ["Java/MVP 패턴 기반 레거시 코드 유지보수", "MVVM 패턴을 적용한 신규 기능 개발"],
           },
           {
-            title: "돈버는 알람 기능 개발",
+            title: "돈 버는 알람 기능 개발",
             bullets: ["안 쓰는 시간, 미사용 시간을 활용해 캐시를 지급하는 알람 기능 구현"],
           },
           {

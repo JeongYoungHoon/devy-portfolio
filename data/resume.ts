@@ -155,7 +155,7 @@ export const RESUME_CAREERS: Career[] = [
         title: "타임스프레드 안드로이드 개발 리딩",
         tasks: [
           "Java / MVP 레거시를 분석하고 유지보수하면서, 신규 기능은 Kotlin / MVVM으로 개발",
-          "돈버는 알람 기능 개발, 잠금화면 서비스 로직 유지보수",
+          "돈 버는 알람 기능 개발, 잠금화면 서비스 로직 유지보수",
           "광고 SDK 탑재와 미디에이션 로직 개발·유지보수",
           "Firebase Analytics 트래킹 체계 정리, Retrofit2 + RxJava 연동, Room 데이터 관리",
           "타 계열사 안드로이드 개발자 면접 참여",
