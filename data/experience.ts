@@ -29,7 +29,7 @@ export const COMPANIES: Company[] = [
             title: "고객 상담 진입을 카카오톡 채널 1:1 채팅으로 전환",
             bullets: [
               "외부 상담 솔루션 종료에 대비해 Android·iOS 앱의 상담 진입을 카카오톡 채널 1:1 채팅으로 전환 (단독 담당)",
-              "피쳐플래그로 운영 중 되돌릴 수 있게 구성",
+              "피처 플래그로 운영 중 되돌릴 수 있게 구성",
             ],
           },
           {
@@ -85,7 +85,7 @@ export const COMPANIES: Company[] = [
         cards: [
           {
             title: "혈당 알림 고도화 기능",
-            bullets: ["기존 혈당 알림 정책 변경 및 설정 UX 개선", "혈당 구간별 개별 알림음으로 구분 할 수 있도록 개선"],
+            bullets: ["기존 혈당 알림 정책 변경 및 설정 UX 개선", "혈당 구간별 개별 알림음으로 구분할 수 있도록 개선"],
           },
           {
             title: "푸드샷 다중 이미지 업로드 기능",
@@ -96,7 +96,7 @@ export const COMPANIES: Company[] = [
           },
           {
             title: "앱 내 위임청구 기능 추가",
-            bullets: ["웹으로만 가능하던 위임청구 기능을 앱 기능을 추가", "기존 위임청구 사용자들 앱으로 유입 증가 기대"],
+            bullets: ["웹으로만 가능하던 위임청구 기능을 앱에 추가", "기존 위임청구 사용자들 앱으로 유입 증가 기대"],
           },
           {
             title: "루틴 생성 및 편집 기능 추가",
@@ -112,22 +112,22 @@ export const COMPANIES: Company[] = [
           {
             title: "수면 측정 기능 개선",
             bullets: [
-              "수면 측정중 화면이 딥링크 등으로 다른 화면으로 이탈되지 않도록 구현",
-              "수면 측정 Foreground Service를 멀티 프로세스로 변경하여 안정성 상승",
-              "앱 재실행시 수면 측정중인경우 수면 측정중 화면으로 이동하도록 로직 구현",
+              "수면 측정 중 화면이 딥링크 등으로 다른 화면으로 이탈되지 않도록 구현",
+              "수면 측정 Foreground Service를 멀티 프로세스로 변경하여 안정성 향상",
+              "앱 재실행 시 수면 측정 중인 경우 수면 측정 중 화면으로 이동하도록 로직 구현",
             ],
           },
           {
             title: "푸드샷 다중 이미지 프로세싱 속도 개선",
             bullets: [
-              "푸드샷 다중 이미지 선택시 이미지 프로세싱 (캐싱 처리 등)을 병렬 로직으로 변경하므로서 속도를 최대 3배 증가시킴",
+              "푸드샷 다중 이미지 선택 시 이미지 프로세싱(캐싱 처리 등)을 병렬 로직으로 변경해 속도를 최대 3배 개선",
               "이미지 프로세싱 병렬 로직 변경으로 인한 OOM 방지를 위한 병렬 최대 개수 제한 로직",
             ],
           },
         ],
       },
       {
-        name: "MCare - Moodtake",
+        name: "MCare - MoodTake",
         period: "2023.11 ~ 2024.08",
         stack: "Kotlin, Compose, MVI, Clean Architecture, Hilt, Retrofit2, DataStore, Firebase",
         cards: [
@@ -154,7 +154,7 @@ export const COMPANIES: Company[] = [
     company: "주식회사 넛지헬스케어 (NudgeHealthcare Corp.)",
     projects: [
       {
-        name: "타임스프레드 - 가만히 있어도 캐시 주는 돈버는앱",
+        name: "타임스프레드 - 가만히 있어도 캐시 주는 돈 버는 앱",
         period: "2021.11 ~ 2023.10",
         stack: "Kotlin, Java, Firebase, MVVM, MVP, RxJava, Retrofit2, Room",
         cards: [
@@ -163,8 +163,8 @@ export const COMPANIES: Company[] = [
             bullets: ["Java/MVP 패턴 기반 레거시 코드 유지보수", "MVVM 패턴을 적용한 신규 기능 개발"],
           },
           {
-            title: "돈버는 알람 기능 개발",
-            bullets: ["안쓰는 시간, 미사용 시간을 활용해 캐시를 지급하는 알람 기능 구현"],
+            title: "돈 버는 알람 기능 개발",
+            bullets: ["안 쓰는 시간, 미사용 시간을 활용해 캐시를 지급하는 알람 기능 구현"],
           },
           {
             title: "잠금화면 서비스 로직 유지보수",
@@ -187,20 +187,20 @@ export const COMPANIES: Company[] = [
     projects: [
       {
         name: "아디나 - 남이 보는 나의 매력",
-        period: "2020.01 ~ 2021.09",
+        period: "2020.01 ~ 2021.10",
         cards: [
           {
-            section: "Development Lead · AWS, PHP, MySQL, AdobeXD · 2020.01~2021.09",
+            section: "Development Lead · AWS, PHP, MySQL, AdobeXD · 2020.01~2021.10",
             title: "데이터베이스 설계 및 API 명세",
             bullets: ["서비스 요구사항에 맞는 데이터베이스 테이블 스키마 기획", "API 명세 및 요구사항 명세 문서 규정"],
           },
           {
-            section: "Development Lead · AWS, PHP, MySQL, AdobeXD · 2020.01~2021.09",
+            section: "Development Lead · AWS, PHP, MySQL, AdobeXD · 2020.01~2021.10",
             title: "UX 기획 및 프로세스 플로우 설계",
             bullets: ["상황과 용도, 요구사항에 맞는 UX 기획 및 전반적인 Process Flow 기획"],
           },
           {
-            section: "Development Lead · AWS, PHP, MySQL, AdobeXD · 2020.01~2021.09",
+            section: "Development Lead · AWS, PHP, MySQL, AdobeXD · 2020.01~2021.10",
             title: "AWS 인프라 안정화",
             bullets: [
               "데이터베이스 서버 안정화를 위한 AWS RDS 다중 AZ 적용",
@@ -208,22 +208,22 @@ export const COMPANIES: Company[] = [
             ],
           },
           {
-            section: "Development Lead · AWS, PHP, MySQL, AdobeXD · 2020.01~2021.09",
+            section: "Development Lead · AWS, PHP, MySQL, AdobeXD · 2020.01~2021.10",
             title: "서버 개발 업무 분담",
-            bullets: ["서버개발자의 업무 부담을 줄이기 위한 API 개발 분담"],
+            bullets: ["서버 개발자의 업무 부담을 줄이기 위한 API 개발 분담"],
           },
           {
-            section: "Android & iOS · Kotlin, Swift, Firebase · 2020.03~2021.09",
+            section: "Android & iOS · Kotlin, Swift, Firebase · 2020.03~2021.10",
             title: "푸시 알림 및 인앱결제 구현",
             bullets: ["FCM을 이용한 푸시 알림 구현", "InApp Billing 4.0 / InApp Purchase 구현"],
           },
           {
-            section: "Android & iOS · Kotlin, Swift, Firebase · 2020.03~2021.09",
+            section: "Android & iOS · Kotlin, Swift, Firebase · 2020.03~2021.10",
             title: "실시간 채팅 기능 구현",
             bullets: ["Firebase Realtime Database를 이용한 실시간 채팅 기능 구현"],
           },
           {
-            section: "Android & iOS · Kotlin, Swift, Firebase · 2020.03~2021.09",
+            section: "Android & iOS · Kotlin, Swift, Firebase · 2020.03~2021.10",
             title: "커스텀 UI 구현",
             bullets: [
               "UI 디자인에 맞는 View 구현을 위한 오픈소스 라이브러리 코드 분석 및 구현",
@@ -267,8 +267,8 @@ export const COMPANIES: Company[] = [
           },
           {
             section: "Mobile · Kotlin, Swift, Firebase · 2018.11~2020.01",
-            title: "프로필 사진 심사앱 제작",
-            bullets: ["프로필 사진 심사를 위한 심사앱(Android, iOS) 제작"],
+            title: "프로필 사진 심사 앱 제작",
+            bullets: ["프로필 사진 심사를 위한 심사 앱(Android, iOS) 제작"],
           },
           {
             section: "Frontend & Backend · PHP · 2019.03~2019.12",
@@ -281,7 +281,7 @@ export const COMPANIES: Company[] = [
           {
             section: "iOS · Swift, Firebase · 2018.09~2018.11",
             title: "최초 퍼블릭 프로덕션 출시",
-            bullets: ["외주로 되어있던 프로젝트를 가져와 개발 시작", "FCM 푸시 알림 및 InApp Purchase 구현"],
+            bullets: ["외주로 되어 있던 프로젝트를 가져와 개발 시작", "FCM 푸시 알림 및 InApp Purchase 구현"],
           },
           {
             section: "Android · Java, Firebase · 2018.06~2018.09",
