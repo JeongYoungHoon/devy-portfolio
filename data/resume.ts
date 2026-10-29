@@ -26,7 +26,7 @@ export const RESUME_INTRO = {
       text: "카카오헬스케어, 넛지헬스케어, 어디나. Compose와 MVI/MVVM 기반 앱 개발, Java 레거시를 유지하며 Kotlin으로 전환.",
     },
     {
-      label: "제로베이스 구축 2회",
+      label: "제로베이스 구축 2건",
       text: "아디나(기획, DB·API 설계, AWS 인프라, 모바일 앱)와 MoodTake(Android 파트 리딩, CI/CD 구축, Clean Architecture·MVI 설계).",
     },
     {
@@ -63,7 +63,7 @@ export const RESUME_SKILLS: SkillGroup[] = [
   },
   {
     category: "iOS",
-    items: ["Swift", "xCode (약 3년 - 회사 경력 약 2년, 개인 개발자 약 1년)"],
+    items: ["Swift", "Xcode (약 3년 - 회사 경력 약 2년, 개인 개발자 약 1년)"],
   },
   {
     category: "AI Productivity",
