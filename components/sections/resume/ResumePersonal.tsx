@@ -18,6 +18,16 @@ export default function ResumePersonal({ id }: { id?: string }) {
               )}
             </div>
             <TaskList tasks={item.tasks} />
+            {item.link && (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 block break-all text-xs text-zinc-900 underline underline-offset-2 dark:text-zinc-100"
+              >
+                {item.link.replace(/^https?:\/\//, "")}
+              </a>
+            )}
           </div>
         ))}
       </div>
