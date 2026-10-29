@@ -195,6 +195,7 @@ export const RESUME_CAREERS: Career[] = [
 export type PersonalItem = {
   name: string;
   badge?: string;
+  link?: string;
   tasks: string[];
 };
 
@@ -232,6 +233,7 @@ export const RESUME_PERSONAL: PersonalItem[] = [
   {
     name: "DevyCore",
     tasks: ["위 앱들이 함께 쓰는 공통 라이브러리 (Compose 컴포넌트, DataStore·DynamoDB·네트워크 모듈)"],
+    link: "https://github.com/DevyMobile/devy-core-android",
   },
   {
     name: "ChipStox",

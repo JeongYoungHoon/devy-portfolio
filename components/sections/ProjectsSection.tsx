@@ -17,6 +17,16 @@ function ProjectCard({ project }: { project: Project }) {
           <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{project.period}</span>
         </div>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
+        {project.link && (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 block break-all text-sm text-zinc-900 underline underline-offset-2 dark:text-zinc-100"
+          >
+            {project.link.replace(/^https?:\/\//, "")}
+          </a>
+        )}
         {project.note && <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-500">{project.note}</p>}
         <p className="my-3 rounded-lg bg-zinc-100 px-3 py-2 text-xs text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400">
           {project.stack}
