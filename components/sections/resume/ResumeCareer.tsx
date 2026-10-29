@@ -16,7 +16,7 @@ export function TaskList({ tasks }: { tasks: string[] }) {
 
 function CareerItemCard({ item }: { item: CareerItem }) {
   return (
-    <div className="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
+    <div className="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800 print:break-inside-auto!">
       <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
         <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">{item.title}</h4>
         {item.period && (
