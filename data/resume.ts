@@ -26,7 +26,7 @@ export const RESUME_INTRO = {
       text: "카카오헬스케어, 넛지헬스케어, 어디나. Compose와 MVI/MVVM 기반 앱 개발, Java 레거시를 유지하며 Kotlin으로 전환.",
     },
     {
-      label: "제로베이스 구축 2회",
+      label: "제로베이스 구축 2건",
       text: "아디나(기획, DB·API 설계, AWS 인프라, 모바일 앱)와 MoodTake(Android 파트 리딩, CI/CD 구축, Clean Architecture·MVI 설계).",
     },
     {
@@ -63,7 +63,7 @@ export const RESUME_SKILLS: SkillGroup[] = [
   },
   {
     category: "iOS",
-    items: ["Swift", "xCode (약 3년 - 회사 경력 약 2년, 개인 개발자 약 1년)"],
+    items: ["Swift", "Xcode (약 3년 - 회사 경력 약 2년, 개인 개발자 약 1년)"],
   },
   {
     category: "AI Productivity",
@@ -74,8 +74,8 @@ export const RESUME_SKILLS: SkillGroup[] = [
     items: ["Slack", "Jira", "Figma", "Zeplin", "Notion"],
   },
   {
-    category: "DataBase Tools",
-    items: ["Firebase Realtime DataBase", "AWS DynamoDB", "MySQL", "SQLite"],
+    category: "Database Tools",
+    items: ["Firebase Realtime Database", "AWS DynamoDB", "MySQL", "SQLite"],
   },
   {
     category: "DevOps & Back-End",
@@ -155,7 +155,7 @@ export const RESUME_CAREERS: Career[] = [
         title: "타임스프레드 안드로이드 개발 리딩",
         tasks: [
           "Java / MVP 레거시를 분석하고 유지보수하면서, 신규 기능은 Kotlin / MVVM으로 개발",
-          "돈버는 알람 기능 개발, 잠금화면 서비스 로직 유지보수",
+          "돈 버는 알람 기능 개발, 잠금화면 서비스 로직 유지보수",
           "광고 SDK 탑재와 미디에이션 로직 개발·유지보수",
           "Firebase Analytics 트래킹 체계 정리, Retrofit2 + RxJava 연동, Room 데이터 관리",
           "타 계열사 안드로이드 개발자 면접 참여",
