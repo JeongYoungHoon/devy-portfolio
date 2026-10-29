@@ -8,7 +8,7 @@ export default function SectionTitle({
   hint?: string;
 }) {
   return (
-    <div id={id} className="mb-4 scroll-mt-20">
+    <div id={id} className="mb-4 scroll-mt-20 break-after-avoid">
       <h2 className="font-mono text-xs font-medium uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
         {children}
       </h2>

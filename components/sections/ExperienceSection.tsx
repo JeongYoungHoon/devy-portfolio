@@ -9,7 +9,7 @@ export function CardGrid({ cards }: { cards: WorkCard[] }) {
         return (
           <div key={`${card.title}-${i}`}>
             {showSection && (
-              <p className="mb-2 mt-4 font-mono text-xs text-zinc-400 dark:text-zinc-500">{card.section}</p>
+              <p className="mb-2 mt-4 break-after-avoid font-mono text-xs text-zinc-400 dark:text-zinc-500">{card.section}</p>
             )}
             <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
               <p className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">{card.title}</p>

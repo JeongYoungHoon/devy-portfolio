@@ -40,7 +40,7 @@ export default function ProjectsSection({ id }: { id?: string }) {
         ))}
       </div>
       <div className="mt-10">
-        <p className="mb-4 font-mono text-xs font-medium uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+        <p className="mb-4 font-mono text-xs font-medium uppercase tracking-widest text-zinc-400 dark:text-zinc-500 print:break-after-avoid">
           이전 프로젝트
         </p>
         <div className="space-y-4">

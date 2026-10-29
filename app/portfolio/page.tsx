@@ -9,7 +9,7 @@ import { PORTFOLIO_HIGHLIGHTS, PORTFOLIO_TIMELINE } from "@/data/overview";
 
 export default function PortfolioPage() {
   return (
-    <main className="mx-auto max-w-4xl px-6 pb-24 pt-24">
+    <main className="mx-auto max-w-4xl px-6 pb-24 pt-24 print:pb-0 print:pt-0">
       <div className="space-y-12">
         <ProfileHeader counterpart="resume" subtitle="Android 시니어 개발자 포트폴리오" />
         <ResumeIntro id="about" />

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ResumeLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/80">
+      <header className="print:hidden fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/80">
         <nav className="mx-auto flex h-14 max-w-3xl items-center justify-between px-6">
           <span className="font-mono text-sm font-semibold tracking-tight">이력서</span>
           <div className="flex items-center gap-3">
