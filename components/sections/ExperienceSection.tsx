@@ -1,61 +1,67 @@
-import { EXPERIENCES } from "@/data/experience";
+import { COMPANIES, type WorkCard } from "@/data/experience";
+import SectionTitle from "@/components/shared/SectionTitle";
 
-export default function ExperienceSection() {
+export function CardGrid({ cards }: { cards: WorkCard[] }) {
   return (
-    <section id="experience" className="bg-zinc-50 dark:bg-zinc-900">
-      <div className="mx-auto max-w-5xl px-6 py-24">
-        <h2 className="mb-10 text-3xl font-bold tracking-tight">Work Experience</h2>
-
-        <div className="space-y-6">
-          {EXPERIENCES.map((exp, i) => (
-            <div
-              key={i}
-              className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
-            >
-              <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-                <div>
-                  <p className="mb-1 font-mono text-xs font-medium uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                    {exp.company}
-                  </p>
-                  <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                    {exp.project}
-                  </h3>
-                  <p className="mt-0.5 text-sm text-zinc-500 dark:text-zinc-400">
-                    {exp.description}
-                  </p>
-                </div>
-                <div className="flex shrink-0 flex-col items-start gap-1.5 sm:items-end">
-                  <span className="rounded-full border border-zinc-200 px-2.5 py-0.5 text-xs font-medium text-zinc-600 dark:border-zinc-700 dark:text-zinc-400">
-                    {exp.role}
-                  </span>
-                  <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500">
-                    {exp.period}
-                  </span>
-                </div>
-              </div>
-
-              <ul className="mb-4 space-y-1.5">
-                {exp.highlights.map((h) => (
-                  <li key={h} className="flex gap-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600" />
-                    {h}
+    <div className="space-y-3">
+      {cards.map((card, i) => {
+        const showSection = card.section && card.section !== cards[i - 1]?.section;
+        return (
+          <div key={`${card.title}-${i}`}>
+            {showSection && (
+              <p className="mb-2 mt-4 break-after-avoid font-mono text-xs text-zinc-500 dark:text-zinc-400">{card.section}</p>
+            )}
+            <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+              <p className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">{card.title}</p>
+              <ul className="space-y-1">
+                {card.bullets.map((b) => (
+                  <li key={b} className="flex gap-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600" />
+                    {b}
                   </li>
                 ))}
               </ul>
-
-              <div className="flex flex-wrap gap-1.5">
-                {exp.stack.map((s) => (
-                  <span
-                    key={s}
-                    className="rounded-md bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+export default function ExperienceSection({ id }: { id?: string }) {
+  return (
+    <section>
+      <SectionTitle id={id}>실무 경험</SectionTitle>
+      <div className="space-y-10">
+        {COMPANIES.map((company) => (
+          <div key={company.company}>
+            <h3 className="mb-4 text-xl font-bold text-zinc-900 dark:text-zinc-100">{company.company}</h3>
+            <div className="space-y-8">
+              {company.projects.map((project) => (
+                <div key={project.name ?? project.period}>
+                  <div className="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                    {project.name && (
+                      <h4 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">{project.name}</h4>
+                    )}
+                    <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{project.period}</span>
+                    {project.role && (
+                      <span className="rounded-full border border-zinc-200 px-2 py-0.5 text-xs text-zinc-500 dark:border-zinc-700">
+                        {project.role}
+                      </span>
+                    )}
+                  </div>
+                  {project.stack && (
+                    <p className="mb-3 rounded-lg bg-zinc-100 px-3 py-2 text-xs text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400">
+                      {project.stack}
+                    </p>
+                  )}
+                  <CardGrid cards={project.cards} />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

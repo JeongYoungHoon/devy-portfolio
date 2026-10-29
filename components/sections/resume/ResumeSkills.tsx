@@ -1,11 +1,10 @@
 import { RESUME_SKILLS } from "@/data/resume";
+import SectionTitle from "@/components/shared/SectionTitle";
 
-export default function ResumeSkills() {
+export default function ResumeSkills({ id }: { id?: string }) {
   return (
     <section>
-      <h2 className="mb-4 font-mono text-xs font-medium uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-        Core Skills
-      </h2>
+      <SectionTitle id={id}>Core Skills</SectionTitle>
       <div className="grid gap-3 sm:grid-cols-2">
         {RESUME_SKILLS.map((group) => (
           <div

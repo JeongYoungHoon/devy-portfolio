@@ -1,21 +1,24 @@
 import { RESUME_INTRO } from "@/data/resume";
+import SectionTitle from "@/components/shared/SectionTitle";
 
-export default function ResumeIntro() {
+export default function ResumeIntro({ id }: { id?: string }) {
   return (
     <section>
-      <h2 className="mb-4 font-mono text-xs font-medium uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-        자기소개
-      </h2>
-      <h3 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-        {RESUME_INTRO.headline}
-      </h3>
-      <div className="space-y-3">
-        {RESUME_INTRO.paragraphs.map((p, i) => (
-          <p key={i} className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-            {p}
-          </p>
+      <SectionTitle id={id}>자기소개</SectionTitle>
+      <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{RESUME_INTRO.headline}</h3>
+      <p className="mb-3 mt-1 text-sm text-zinc-500 dark:text-zinc-400">{RESUME_INTRO.tagline}</p>
+      <ul className="space-y-2">
+        {RESUME_INTRO.points.map((point) => (
+          <li key={point.label} className="flex gap-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+            <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600" />
+            <span>
+              <strong className="font-semibold text-zinc-900 dark:text-zinc-100">{point.label}</strong>
+              {": "}
+              {point.text}
+            </span>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
