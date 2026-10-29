@@ -1,8 +1,69 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:is(.dark *));
+/* 인쇄(PDF)는 항상 라이트 테마. 화면에서만 .dark 가 적용된다 */
+@custom-variant dark {
+  @media not print {
+    &:is(.dark *) {
+      @slot;
+    }
+  }
+}
 
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    background: #fff;
+    color: #18181b;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* 카드·표·목록 항목은 페이지 경계에서 잘리지 않게 */
+  li,
+  [class*="rounded-"] {
+    break-inside: avoid;
+  }
+
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+
+  /* PDF 는 한글·라틴·가운뎃점이 또렷하고 자간이 일정한 단일 폰트로 출력 (웹폰트 Geist 는 가운뎃점이 작고 영문 자간이 벌어짐) */
+  html,
+  body,
+  body * {
+    font-family: "Noto Sans CJK KR", "Noto Sans KR", sans-serif !important;
+    letter-spacing: normal !important;
+    font-variant-ligatures: none;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  .font-mono {
+    font-family: "Noto Sans Mono CJK KR", "Noto Sans Mono", monospace !important;
+  }
+
+  /* 링크는 밑줄로 구분 (주소는 화면에 글자로 이미 표시됨) */
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 }

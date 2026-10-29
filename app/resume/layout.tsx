@@ -1,10 +1,19 @@
 import DarkModeToggle from "@/components/DarkModeToggle";
-import Link from "next/link";
+import type { Metadata } from "next";
+
+const TITLE = "정영훈 | Android 시니어 개발자 이력서";
+const DESCRIPTION = "Android 시니어 개발자 정영훈의 이력서";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: { title: TITLE, description: DESCRIPTION, type: "profile", locale: "ko_KR" },
+};
 
 export default function ResumeLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/80">
+      <header className="print:hidden fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/80">
         <nav className="mx-auto flex h-14 max-w-3xl items-center justify-between px-6">
           <span className="font-mono text-sm font-semibold tracking-tight">이력서</span>
           <div className="flex items-center gap-3">
