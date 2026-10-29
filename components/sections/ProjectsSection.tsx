@@ -14,7 +14,7 @@ function ProjectCard({ project }: { project: Project }) {
               {project.version}
             </span>
           )}
-          <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500">{project.period}</span>
+          <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{project.period}</span>
         </div>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
         {project.note && <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-500">{project.note}</p>}
@@ -40,7 +40,7 @@ export default function ProjectsSection({ id }: { id?: string }) {
         ))}
       </div>
       <div className="mt-10">
-        <p className="mb-4 font-mono text-xs font-medium uppercase tracking-widest text-zinc-400 dark:text-zinc-500 print:break-after-avoid">
+        <p className="mb-4 font-mono text-xs font-medium uppercase tracking-widest text-zinc-500 dark:text-zinc-400 print:break-after-avoid">
           이전 프로젝트
         </p>
         <div className="space-y-4">

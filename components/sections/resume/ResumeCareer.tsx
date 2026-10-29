@@ -20,7 +20,7 @@ function CareerItemCard({ item }: { item: CareerItem }) {
       <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
         <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">{item.title}</h4>
         {item.period && (
-          <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500">{item.period}</span>
+          <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{item.period}</span>
         )}
       </div>
       <TaskList tasks={item.tasks} />
@@ -34,7 +34,7 @@ function CareerBlock({ career }: { career: Career }) {
       <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100">{career.company}</h3>
         <div className="flex flex-wrap items-center gap-2">
-          <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500">{career.period}</span>
+          <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{career.period}</span>
           {career.type && (
             <span className="rounded-full border border-zinc-200 px-2 py-0.5 text-xs text-zinc-500 dark:border-zinc-700">
               {career.type}

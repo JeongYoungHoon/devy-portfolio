@@ -22,7 +22,7 @@ export default function Overview({
             key={row.period + row.company}
             className="grid gap-x-4 gap-y-0.5 px-4 py-3 text-sm sm:grid-cols-[10rem_9rem_1fr]"
           >
-            <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500 sm:pt-0.5">{row.period}</span>
+            <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400 sm:pt-0.5">{row.period}</span>
             <span className="font-semibold text-zinc-900 dark:text-zinc-100">{row.company}</span>
             <span className="text-zinc-600 dark:text-zinc-400">{row.role}</span>
           </li>

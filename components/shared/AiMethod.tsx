@@ -41,7 +41,7 @@ export default function AiMethod({ id, variant }: { id?: string; variant: "resum
           href={AI_METHOD.repo.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="break-all font-medium text-zinc-900 underline-offset-2 hover:underline dark:text-zinc-100"
+          className="break-all font-medium text-zinc-900 underline underline-offset-2 dark:text-zinc-100"
         >
           {AI_METHOD.repo.label}
         </a>
