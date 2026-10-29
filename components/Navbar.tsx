@@ -1,11 +1,11 @@
 import DarkModeToggle from "./DarkModeToggle";
 
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Stack", href: "#stack" },
-  { label: "Contact", href: "#contact" },
+  { label: "소개", href: "#about" },
+  { label: "한눈에", href: "#overview" },
+  { label: "AI 방식", href: "#ai" },
+  { label: "실무 경험", href: "#experience" },
+  { label: "개인 프로젝트", href: "#projects" },
 ];
 
 export default function Navbar() {
@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/80">
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
         <a href="#" className="font-mono text-sm font-semibold tracking-tight">
-          Devy Portfolio
+          정영훈 포트폴리오
         </a>
         <div className="flex items-center gap-1">
           <ul className="hidden items-center gap-1 sm:flex">

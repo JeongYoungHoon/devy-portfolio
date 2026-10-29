@@ -1,5 +1,14 @@
 import DarkModeToggle from "@/components/DarkModeToggle";
-import Link from "next/link";
+import type { Metadata } from "next";
+
+const TITLE = "정영훈 | Android 시니어 개발자 이력서";
+const DESCRIPTION = "Android 시니어 개발자 정영훈의 이력서";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: { title: TITLE, description: DESCRIPTION, type: "profile", locale: "ko_KR" },
+};
 
 export default function ResumeLayout({ children }: { children: React.ReactNode }) {
   return (
