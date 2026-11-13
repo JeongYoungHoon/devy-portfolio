@@ -1,12 +1,12 @@
-import { RESUME_SKILLS } from "@/data/resume";
+import { RESUME_SKILLS, type SkillGroup } from "@/data/resume";
 import SectionTitle from "@/components/shared/SectionTitle";
 
-export default function ResumeSkills({ id }: { id?: string }) {
+export default function ResumeSkills({ id, skills = RESUME_SKILLS }: { id?: string; skills?: SkillGroup[] }) {
   return (
     <section>
       <SectionTitle id={id}>Core Skills</SectionTitle>
       <div className="grid gap-3 sm:grid-cols-2">
-        {RESUME_SKILLS.map((group) => (
+        {skills.map((group) => (
           <div
             key={group.category}
             className="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800"
