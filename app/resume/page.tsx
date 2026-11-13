@@ -6,6 +6,7 @@ import ResumeSkills from "@/components/sections/resume/ResumeSkills";
 import ResumeCareer from "@/components/sections/resume/ResumeCareer";
 import ResumePersonal from "@/components/sections/resume/ResumePersonal";
 import ResumeOther from "@/components/sections/resume/ResumeOther";
+import UpdatedAt from "@/components/shared/UpdatedAt";
 import { RESUME_HIGHLIGHTS, RESUME_TIMELINE } from "@/data/overview";
 
 export default function ResumePage() {
@@ -20,6 +21,7 @@ export default function ResumePage() {
         <ResumeCareer />
         <ResumePersonal />
         <ResumeOther />
+        <UpdatedAt />
       </div>
     </main>
   );

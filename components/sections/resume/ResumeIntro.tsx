@@ -5,8 +5,7 @@ export default function ResumeIntro({ id }: { id?: string }) {
   return (
     <section>
       <SectionTitle id={id}>자기소개</SectionTitle>
-      <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{RESUME_INTRO.headline}</h3>
-      <p className="mb-3 mt-1 text-sm text-zinc-500 dark:text-zinc-400">{RESUME_INTRO.tagline}</p>
+      <h3 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-100">{RESUME_INTRO.headline}</h3>
       <ul className="space-y-2">
         {RESUME_INTRO.points.map((point) => (
           <li key={point.label} className="flex gap-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">

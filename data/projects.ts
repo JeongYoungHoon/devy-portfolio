@@ -17,7 +17,7 @@ export const PROJECTS: Project[] = [
   // ── Personal Projects ──
   {
     name: "Appler - 앱플러 (Application + Butler)",
-    version: "v0.7.0",
+    version: null,
     period: "2026.06 ~ 현재",
     description: "설치된 각 앱의 출석체크나 혜택 등 해야 할 일을 관리해주는 앱",
     note: "Play Store 비공개 테스트 중",
@@ -41,19 +41,18 @@ export const PROJECTS: Project[] = [
         title: "리포트 탭 구현",
         bullets: [
           "이번 달 총 완료 수, 최근 연속 완수일(streak), 요일별 미션 완수율 차트 등 대시보드 구현",
-          "앱별 완료 비중을 보여주는 포트폴리오 섹션에 간단히/자세히 보기 토글 기능 추가",
           "주간 완료 스탬프로 한 주간의 수행 현황을 한눈에 확인 가능",
         ],
       },
       {
         title: "백업 및 복구 기능",
-        bullets: ["로컬 데이터를 원하는 폴더에 백업하고 복구할 수 있는 기능 추가", "Play Store 배포 자동화 및 앱 아이콘 리디자인"],
+        bullets: ["로컬 데이터를 원하는 폴더에 백업하고 복구할 수 있는 기능 추가"],
       },
     ],
   },
   {
     name: "Pixaloom",
-    version: "v2.21.0",
+    version: null,
     period: "2025.12 ~ 현재",
     description: "Gemini API(Nano Banana), GPT Image를 이용한 이미지 생성 앱",
     stack: "Kotlin, Compose, MVVM, Retrofit2, Room, DataStore, Multi-module / Figma / Notion",
@@ -72,7 +71,6 @@ export const PROJECTS: Project[] = [
         title: "멀티 이미지 모델 지원",
         bullets: [
           "Nano Banana ↔ GPT Image 모델 전환 시 이미지 비율 유지 로직 구현",
-          "이미지 생성/수정 SafeGuard 로직 최소화 작업으로 응답성 개선",
           "Remote Config 기반 모델 목록 동적 관리 및 최신 모델(Nano Banana 2·Pro, GPT Image) 지원",
         ],
       },
@@ -84,7 +82,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Devy Workspace",
-    version: "v3.9.0",
+    version: null,
     period: "2025.09 ~ 현재",
     description: "개인 프로젝트 티켓(노션), GitHub 상태 관리 앱",
     stack: "Kotlin, Compose, MVVM, Retrofit2, Room, DataStore, Multi-module / Figma / Notion",
@@ -102,7 +100,6 @@ export const PROJECTS: Project[] = [
         title: "GitHub 연동 관리",
         bullets: [
           "GitHub Actions 실행 및 상태 확인, PR 목록/병합, Branch/Release 목록 조회",
-          "Notion 페이지 링크에서 Page ID / DB ID 자동 추출 기능 구현",
         ],
       },
       {
@@ -138,7 +135,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "AlterAI",
-    version: "v4.33.0",
+    version: null,
     period: "2025.07 ~ 현재",
     description: "Gemini API를 이용한 Gemini와의 채팅 앱",
     stack: "Kotlin, Compose, MVVM, Retrofit2, Room, DataStore, Multi-module / Figma / Notion",
@@ -154,7 +151,6 @@ export const PROJECTS: Project[] = [
         bullets: [
           "기본 프롬프트 설정, 채팅 상세 설정 기능 추가",
           "메시지 재전송 기능 추가",
-          "Worker 완료 시 파일 삭제 처리로 리소스 누수 수정",
           "채팅방별 응답 분량·전개 주도성 설정 및 '내 인물' 채팅 지원",
           "Remote Config 기반 모델 목록 관리 및 Notion 동기화 워크플로우 구성",
           "API 키를 Lambda 프록시 뒤에 두고 DynamoDB로 응답 캐시",
@@ -166,7 +162,7 @@ export const PROJECTS: Project[] = [
   {
     name: "ChipStox",
     version: null,
-    period: "비공개 · 개발 중",
+    period: "개발 중",
     description: "모임이 자기만의 포인트를 발행해 주고받는 커뮤니티 서비스",
     stack: "Supabase / React 웹",
     accent: "#EC4899",

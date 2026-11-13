@@ -17,21 +17,27 @@ export const RESUME_PROFILE = {
   ],
 };
 
+// 이력서·포트폴리오 하단 "Updated At" — Notion 원본의 갱신일과 맞춘다
+export const UPDATED_AT = "2026-11-13";
+
 export const RESUME_INTRO = {
-  headline: "Android 시니어 개발자 · 실무 8년",
-  tagline: "설계부터 배포까지 직접 구축해 온 개발자",
+  headline: "설계부터 배포까지 직접 구축해 온 개발자",
   points: [
     {
-      label: "실무 8년",
+      label: "경력",
       text: "카카오헬스케어, 넛지헬스케어, 어디나. Compose와 MVI/MVVM 기반 앱 개발, Java 레거시를 유지하며 Kotlin으로 전환.",
     },
     {
-      label: "제로베이스 구축 2건",
-      text: "아디나(기획, DB·API 설계, AWS 인프라, 모바일 앱)와 MoodTake(Android 파트 리딩, CI/CD 구축, Clean Architecture·MVI 설계).",
+      label: "처음부터 만든 경험",
+      text: "기획부터 인프라·앱까지 맡아 서비스를 제로베이스로 구축.",
+    },
+    {
+      label: "지금은 기능 하나를 끝까지",
+      text: "아몬즈랩에서 Android·iOS·웹과 서버 일부까지 맡음. 본인인증 가입·로그인을 서버부터 앱까지 개발 중, 앱 정기 출시 3회 직접 수행.",
     },
     {
       label: "AI 도구를 개발 흐름에 포함",
-      text: "Claude Code와 Gemini를 코드 리뷰와 리팩토링에 활용. 개인 앱은 GitHub Actions 릴리스 자동화와 Remote Config 기반 모델 교체로 운영.",
+      text: "Claude Code 세션을 저장소별로 운영하고, 결과 검증과 병합·출시 승인은 직접 수행.",
     },
   ],
 };
@@ -63,11 +69,15 @@ export const RESUME_SKILLS: SkillGroup[] = [
   },
   {
     category: "iOS",
-    items: ["Swift", "Xcode (약 3년 - 회사 경력 약 2년, 개인 개발자 약 1년)"],
+    items: ["Swift", "UIKit", "Xcode (약 3년 - 회사 경력 약 2년, 개인 개발자 약 1년)"],
+  },
+  {
+    category: "Web",
+    items: ["TypeScript", "React", "Next.js"],
   },
   {
     category: "AI Productivity",
-    items: ["Claude Code", "Gemini (코드 리뷰, 리팩토링 등 워크플로우 전반에 활용)"],
+    items: ["Claude Code (멀티 세션 운영)", "Gemini"],
   },
   {
     category: "Collaboration Tools",
@@ -79,9 +89,38 @@ export const RESUME_SKILLS: SkillGroup[] = [
   },
   {
     category: "DevOps & Back-End",
-    items: ["AWS", "Firebase", "GitHub Actions (CI/CD)", "PHP"],
+    items: ["NestJS", "AWS", "Firebase", "GitHub Actions (CI/CD)", "PHP"],
   },
 ];
+
+// 포트폴리오는 Notion 원본에서 Android 목록·협업 도구·DevOps 항목이 이력서와 다르다
+export const PORTFOLIO_SKILLS: SkillGroup[] = RESUME_SKILLS.map((group) => {
+  switch (group.category) {
+    case "Android":
+      return {
+        ...group,
+        items: [
+          "Kotlin",
+          "Java",
+          "Compose",
+          "Coroutine",
+          "Flow",
+          "Retrofit2",
+          "MVI/MVVM",
+          "Room",
+          "DataStore",
+          "Multi-module Architecture",
+          "Android App Architecture",
+        ],
+      };
+    case "Collaboration Tools":
+      return { ...group, items: [...group.items, "Google Chat", "Google Docs"] };
+    case "DevOps & Back-End":
+      return { ...group, items: [...group.items, "MySQL"] };
+    default:
+      return group;
+  }
+});
 
 export type CareerItem = {
   title: string;
@@ -102,14 +141,15 @@ export const RESUME_CAREERS: Career[] = [
     period: "2026.09 ~ 현재",
     items: [
       {
-        title: "Android / iOS / ClientWeb 개발",
+        title: "Android · iOS · Web 개발 (백엔드 일부 포함)",
         tasks: [
-          "외부 상담 솔루션 종료에 대비해 앱의 고객 상담 진입을 카카오톡 채널 1:1 채팅으로 전환 (Android·iOS 단독)",
+          "휴대폰 본인인증 기반 회원가입·로그인·계정 찾기를 서버 API부터 웹 화면, Android·iOS 웹뷰까지 개발 (진행 중)",
+          "Meta 이벤트 직접 연동(Android·iOS)을 출시하고, 출시 전 QA에서 릴리스 빌드에만 광고 ID가 빠지는 문제를 찾아 해결",
+          "외부 상담 솔루션 종료에 대비해 앱의 상담 진입을 카카오톡 채널 1:1 채팅으로 바꾸는 개발 (Android·iOS 단독)",
           "자체 CS 챗봇의 웹·Android·iOS 연동 구현과 비회원 상담 보안 설계",
-          "네이티브 화면의 웹뷰 전환 주도 (첫 전환 화면 선정, 공통 GA 브리지, 오류 화면 기준 확정)",
+          "네이티브 화면의 웹뷰 전환 주도 (첫 전환 화면 구현, 플랫폼별 GA 통일, 공통 GA 브리지)",
+          "앱 정기 출시 3회를 QA부터 스토어 출시까지 직접 운영하고, 배포 워크플로·versionCode·Jira 출시 처리 흐름 개선",
           "앱 크래시·분석 데이터 오류를 원인 조사부터 검증까지 단독 처리",
-          "앱 릴리스를 QA부터 스토어 게시까지 운영하고 QA 기준 정리",
-          "Android·iOS 배포 워크플로 장애를 고치고 versionCode 체계와 스토어 업로드·Jira 출시 처리 흐름을 개선",
         ],
       },
     ],
@@ -212,7 +252,6 @@ export const RESUME_PERSONAL: PersonalItem[] = [
     tasks: [
       "이미지 생성 앱(Nano Banana, GPT Image)",
       "모델을 바꿔도 사용자가 고른 이미지 비율이 유지되도록 구현",
-      "이미지 생성/수정 SafeGuard 로직을 최소화해 응답성 개선",
       "모델 목록은 Remote Config로 관리",
     ],
   },
@@ -237,7 +276,7 @@ export const RESUME_PERSONAL: PersonalItem[] = [
   },
   {
     name: "ChipStox",
-    badge: "비공개, 개발 중",
+    badge: "개발 중",
     tasks: [
       "모임이 자기만의 포인트를 발행해 주고받는 커뮤니티 서비스. Supabase 백엔드와 React 웹으로 설계·구현",
       "QR/닉네임 송금, 그룹 개설, 마켓, 출석 보너스, 관리자 설정",
