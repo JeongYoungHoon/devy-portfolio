@@ -5,7 +5,9 @@ import ResumeIntro from "@/components/sections/resume/ResumeIntro";
 import ResumeSkills from "@/components/sections/resume/ResumeSkills";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import UpdatedAt from "@/components/shared/UpdatedAt";
 import { PORTFOLIO_HIGHLIGHTS, PORTFOLIO_TIMELINE } from "@/data/overview";
+import { PORTFOLIO_SKILLS } from "@/data/resume";
 
 export default function PortfolioPage() {
   return (
@@ -13,11 +15,12 @@ export default function PortfolioPage() {
       <div className="space-y-12">
         <ProfileHeader counterpart="resume" subtitle="Android 시니어 개발자 포트폴리오" />
         <ResumeIntro id="about" />
-        <ResumeSkills />
+        <ResumeSkills skills={PORTFOLIO_SKILLS} />
         <Overview id="overview" title="한눈에 보기" timeline={PORTFOLIO_TIMELINE} highlights={PORTFOLIO_HIGHLIGHTS} />
         <AiMethod id="ai" variant="portfolio" />
         <ExperienceSection id="experience" />
         <ProjectsSection id="projects" />
+        <UpdatedAt />
       </div>
     </main>
   );
